@@ -35,6 +35,13 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
+function multiply(num1, num2) {
+  var total = num1 * num2;
+  var sumString = 'The product of ' + num1 + ' and ' + num2 + ' is ' + total + '.';
+  var sum = new Array (num1 + num2, sumString);
+  return sum;
+
+}
 
 // function testMultiply(num1, num2) {
 //   var product = num1 * num2;
@@ -42,7 +49,7 @@ Test this function by hand in the console to get it working, and when you think 
 // }
 //
 // // Here is the test for multiply(); uncomment it to run it
-// testMultiply(4,7);
+testMultiply(4,7);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
@@ -106,14 +113,14 @@ function testSum() {
   }
 }
 
-// function testMultiply() {
-//   if (multiply(5,9)[1] === 'The product of 5 and 9 is 45.') {
-//     console.log('%c TEST FOR multiply() PASSES', 'color: green');
-//   } else {
-//     console.log('%c TEST FOR multiply() FAILS', 'color: red');
-//   }
-// }
-//
+function testMultiply() {
+  if (multiply(5,9)[1] === 'The product of 5 and 9 is 45.') {
+    console.log('%c TEST FOR multiply() PASSES', 'color: green');
+  } else {
+    console.log('%c TEST FOR multiply() FAILS', 'color: red');
+  }
+}
+
 // function testSumAndMultiply() {
 //   if (sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
 //     console.log('%c TEST FOR sumAndMultiply() PASSES', 'color: green');
